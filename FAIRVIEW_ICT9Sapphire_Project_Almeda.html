@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>Conversion Calculator - Almeda</title>
+<head> 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+body {
+  background-image: url('pinkgrid.jpg.jpg');
+}
+  {
+  	font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   background-color: #ffe0ea;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 13px 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ffc6ad;
+}
+
+.active {
+  background-color: #ffc4d6;
+}
+</style>
+</head>
+</head>
+
+<body>
+
+<div class="container-fluid" style="background-color:#ffcfd7; text-decoration-color:#ffdbcc; color: #ffffff">
+		<h1 style="text-align:center">
+	<p class="container" style="background:#ffbdc8; color: #ffdbcc">
+		</h1>
+		<h3 style="text-align:center; text-decoration-color:#ffdbcc"><i>
+			 ------🍓 Unit Converter !! 🍰------
+
+			 <div class="container">
+
+	
+	</p> 
+
+	<label>Select Measurement</label>
+	  				<select class="form-control">
+	  					<option>Length</option>
+	 				</select>
+			</div> 
+
+			<p>
+<p style="text-align: center">Type desired measurement</p>
+		<div style="text-align: center">
+	  				<input type="number" id="operandOne">
+	  				<input type="number" id="operandTwo">
+	  				<input type="number" id="operandThree">
+		</div>
+	</p>
+		<p>
+		<div class="container-fluid" style="background-color:#ffcfd7; text-decoration-color:#ffdbcc; color: #ffffff">
+	  	
+	  		<button onclick="divide();">Convert to centimeters</button>
+	  				
+	  		<button onclick="multiply();">Convert to meters</button>
+	  				
+	  		<button onclick="multiply();">Convert to kilometers</button>
+	 
+	  </p>
+
+	<script type="text/javascript"> 
+		function divide(){
+			// parseInt(); 
+			let a = 100; 
+			let b = parseInt(document.getElementById("operandOne").value); 
+			alert(a / b);
+		}
+		function multiply(){
+			let a = parseInt(document.getElementById("operandTwo").value); 
+			let b = 100;  
+			alert(a * b);
+		}
+		function multiply(){
+			let a = 1000;  
+			let b = parseInt(document.getElementById("operandThree").value);  
+			alert(a * b);
+		}
+		
+	</script>
